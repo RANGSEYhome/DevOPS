@@ -48,7 +48,7 @@ resource "aws_instance" "server_1" {
               git clone https://RANGSEYhome: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@github.com/RANGSEYhome/DevOPS.git /root/DevOPS
 
               # Navigate to the repository and start the app with PM2
-              cd /root/devops-ex
+              cd /root/DevOPS
               npm install
               pm2 start index.js --name node-app -- -p 8000
             EOF
